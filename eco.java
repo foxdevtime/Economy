@@ -133,11 +133,11 @@ public class DiseEcoCommands implements CommandExecutor {
                 return true;
             }
             if (currencyPlayer >= sum) {
-                // Увеличиваем баланс целевого игрока на указанную сумму
+                // Увеличиваем баланс
                 currencyTarget += sum;
-                // Уменьшаем баланс отправителя на указанную сумму
+                // Уменьшаем баланс
                 currencyPlayer -= sum;
-                // Сохраняем изменения в файлах
+                // Сохраняем
                 configTarget.set("balances." + currTarget, currencyTarget);
                 configPlayer.set("balances." + currPlayer, currencyPlayer);
                 try {
